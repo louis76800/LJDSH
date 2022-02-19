@@ -14,14 +14,14 @@
         <h2 class="margin_top titre ">Accueil</h2>
            <br>
            <br>
-       <h3 class="center_text">Bienvenue sur La Java Des Super Héros</h3>
+       <h3 class="center_text">Bienvenue sur La Java Des Super-Héros</h3>
            <br>
            <h4> En suivant les liens dans le menu ci-dessus, vous pourrez: </h4>
-              <p>- Visualiser la carte avec toutes les positions de vos super-héros</p>
+              <p>- Visualiser la carte avec toutes les positions de nos super-héros</p>
 
                <p>- Signaler un incident</p>
 
-               <p>- S'inscrire en temps que super-héros</p>
+               <p>- S'inscrire en tant que super-héros</p>
        </div>
     </div>
 </body>

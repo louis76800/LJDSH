@@ -17,6 +17,8 @@
         <c:choose>
             <c:when test="${message == 0}">
                 <p class="message_succes">  Votre inscription a été réalisé avec succèes</p>
+                <img src="https://www.louisberthelot.info/images/giphy.gif" alt="ici">
+
             </c:when>
             <c:when test="${message == 1}">
                 <p class="message_erreur">    Votre inscription a été annulée : Le pseudo ou le lieu d'habitation ou le numéros de téléphone n'est pas remplis</p>
@@ -34,6 +36,7 @@
                 <h3>Vous êtes un super-héros ?
                     <br> Vous voulez vous rendre utile ?
                     <br>Inscivez-vous ! </h3>
+
             </c:otherwise>
 
 

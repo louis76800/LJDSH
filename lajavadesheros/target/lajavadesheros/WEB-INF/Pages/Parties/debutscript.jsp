@@ -11,7 +11,7 @@
     @import url('https://fonts.googleapis.com/css2? family= Comic+Neue:wght@700 & display=swap');
   </style>
   <div class="navbar">
-    <a href="Acceuil">Carte des supers</a>
+    <a href="Accueil">Carte des supers</a>
     <a href="Incident">Signaler un incident</a>
     <a href="Inscription">Inscription d'un Héro</a>
   </div>
