@@ -29,9 +29,8 @@ public class Supers {
                     "pseudo,telephone,adresse, lattitude, longitude " +
                     "FROM t_super " +
                     "WHERE lattitude >('"+lat+"'-0.7) && lattitude <("+lat+"+0.7) " +
-                    "&& longitude >("+lon+"-0.5) longitude <("+lon+"+0.5) " +
+                    "&& longitude >("+lon+"-0.5) && longitude <("+lon+"+0.5) " +
                     "&& "+incident_en_question+"='on'") ;
-
             while (resultat.next()) {
                 //récupère les coordonées qui provienne de la requête
                 String pseudo=resultat.getString("pseudo");
