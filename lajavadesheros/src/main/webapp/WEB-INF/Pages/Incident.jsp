@@ -43,8 +43,8 @@
             </div>
         </div>
         <c:forEach var="supers" items="${ supers }">
-            <div class="contenu margin_top">
-                <div class="margin_padding center_text">
+            <div class="contenu margin_top" style="margin-top: 25pt;" >
+                <div class="margin_padding center_text" style="margin-left: 25%;margin-right: 25%;">
                     <div>
                         <p>Pseudo : <h1><c:out value="${ supers.pseudo }"/></h1></p>
                         <p>Ville de résidence : <h2><c:out value="${ supers.ville }"/></h2></p>
