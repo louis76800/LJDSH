@@ -1,0 +1,268 @@
+@font-face {
+    font-family: 'strong_boyzregular';
+    src: url('WEB-INF/Pages/font/strong_boyz-webfont.woff2') format('woff2'),
+    url('WEB-INF/Pages/font/strong_boyz-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html{
+    font-family : 'Bookman Old Style';
+    width: 100%;
+    height: 100%;
+}
+
+#map {margin-top: 20pt; height: 250pt;  }
+
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 50;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+.center_text{
+    text-align: center;
+}
+.margin_top{
+    margin-top: 3%;
+}
+body{
+    background-color: white;
+}
+.frame{
+    position: center;
+
+}
+.border{
+    border: solid black 1pt;
+
+}
+.titre{
+    text-align: center;
+}
+.margin_padding{
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    background-color: white;
+}
+.message_succes{
+    color: green;
+    font-size: 20pt;
+}
+.message_erreur{
+    color: red;
+    font-size: 20pt;
+}
+
+@media(max-width:300px){
+    html{
+        font-family : 'Bookman Old Style';
+        width: 95%;
+        height: 95%;
+        font-size: 20pt;
+    }
+    select{
+        font-size: 20pt;
+    }
+    .navbar a {
+
+        font-size: 20pt;
+    }
+
+    .inscription_input_text{
+        font-size: 20pt;
+        width: 150pt;
+        overflow: hidden;
+    }
+    .check{
+        width: 20pt;
+        height: 20pt;
+    }
+    button{
+        font-size: 20pt;
+    }
+    .contenu{
+        margin: auto;
+        width: 95%;
+        height: 95%;
+        border: solid black;
+        position: center;
+        border-radius: 20pt;
+
+    }
+    body{
+        background: url("https://www.10wallpaper.com/wallpaper/1366x768/1712/Marvels_The_Avengers_superheroes_2017_4K_High_Quality_1366x768.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        margin-top: 200pt;
+    }
+}
+@media(min-width:301px){
+    html{
+        font-family : 'Bookman Old Style';
+        width: 95%;
+        height: 95%;
+        font-size: 20pt;
+    }
+    select{
+        font-size: 20pt;
+    }
+    .navbar a {
+
+        font-size: 20pt;
+    }
+
+    .inscription_input_text{
+        font-size: 20pt;
+        width: 150pt;
+        overflow: hidden;
+    }
+    .check{
+        width: 20pt;
+        height: 20pt;
+    }
+    button{
+        font-size: 20pt;
+    }
+    .contenu{
+        margin: auto;
+        width: 95%;
+        height: 95%;
+        border: solid black;
+        position: center;
+        border-radius: 20pt;
+        background-color: white;
+
+    }
+    body{
+        background: url("https://www.10wallpaper.com/wallpaper/1366x768/1712/Marvels_The_Avengers_superheroes_2017_4K_High_Quality_1366x768.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        margin-top: 150pt;
+    }
+}
+@media(min-width:700px){
+    html{
+        font-family : 'Bookman Old Style';
+        width: 95%;
+        height: 95%;
+        font-size: 20pt;
+    }
+    select{
+        font-size: 20pt;
+    }
+    .navbar a {
+
+        font-size: 20pt;
+    }
+    .inscription_input_text{
+        font-size: 20pt;
+        width: 200pt;
+        overflow: hidden;
+    }
+    input{
+        font-size: 20pt;
+
+    }
+    .check{
+        width: 20pt;
+        height: 20pt;
+    }
+    button{
+        font-size: 20pt;
+    }
+    .contenu{
+        margin: auto;
+        width: 95%;
+        height: 95%;
+        border: solid black;
+        position: center;
+        border-radius: 20pt;
+
+    }
+    body{
+        background: url("https://www.10wallpaper.com/wallpaper/1366x768/1712/Marvels_The_Avengers_superheroes_2017_4K_High_Quality_1366x768.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        margin-top: 100pt;
+    }
+}
+@media(min-width:1000px){
+    html{
+        font-family : 'Bookman Old Style';
+        width: 95%;
+        height: 95%;
+        font-size: 15pt;
+    }
+    select{
+        font-size: 15pt;
+    }
+    .navbar a {
+
+        font-size: 15pt;
+    }
+
+    input{
+        font-size: 15pt;
+    }
+    .inscription_input_text{
+        font-size: 20pt;
+        width: 300pt;
+        overflow: hidden;
+    }
+    .check{
+        width: 15pt;
+        height: 15pt;
+    }
+    button{
+        font-size: 15pt;
+    }
+    .contenu{
+        margin: auto;
+        width: 95%;
+        height: 95%;
+        border: solid black;
+        position: center;
+        border-radius: 20pt;
+
+    }
+    body{
+        background: url("https://www.10wallpaper.com/wallpaper/1366x768/1712/Marvels_The_Avengers_superheroes_2017_4K_High_Quality_1366x768.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        margin-top: 50pt;
+    }
+}
