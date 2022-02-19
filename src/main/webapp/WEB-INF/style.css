@@ -1,0 +1,91 @@
+body{
+    background: url("https://www.10wallpaper.com/wallpaper/1366x768/1712/Marvels_The_Avengers_superheroes_2017_4K_High_Quality_1366x768.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+
+}
+#map { position: absolute; top: 0; bottom: 0; width: 600px; }
+#menu {
+    position: absolute;
+    background: #efefef;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #04AA6D;
+}
+
+.contenu{
+    margin: auto;
+    width: 95%;
+    height: 95%;
+    border: solid black;
+    position: center;
+    border-radius: 30px;
+    background-color: white;
+
+}
+.center_text{
+    text-align: center;
+}
+.margin_top{
+    margin-top: 3%;
+}
+body{
+    background-color: white;
+}
+.frame{
+    position: center;
+
+}
+.border{
+    border: solid black 1px;
+
+}
+.titre{
+    text-align: center;
+}
+.message_succes{
+    color: #85ff5a;
+    font-size: 20pt;
+}
+.margin_padding{
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+
+    background-color: white;
+}
