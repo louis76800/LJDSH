@@ -17,7 +17,7 @@
                         <p class="message_erreur">La commune n'a pas été remplie.</p>
                     </c:when>
                     <c:when test="${message == 4}">
-                        <p class="message_erreur">l'incident n'est pas correct.</p>
+                        <p class="message_erreur">L'incident n'est pas correct.</p>
                     </c:when>
                 </c:choose>
                 <form action="Incident"method="post">
@@ -38,7 +38,7 @@
                         <option value="evasion_p">Évasion d'un prisonnier</option>
                     </select>
                     <br>
-                    <button type="submit">Envoie</button>
+                    <button type="submit">Valider</button>
                 </form>
             </div>
         </div>

@@ -19,10 +19,10 @@
                         <p class="message_erreur"> Votre inscription a été annulée : Le pseudo existe déjà</p>
                     </c:when>
                     <c:when test="${message == 3}">
-                        <p class="message_erreur"> Votre inscription a été annulée : il n'y pas ou trop de case(s) cochée(s)</p>
+                        <p class="message_erreur"> Votre inscription a été annulée : Il n'y pas ou trop de case(s) cochée(s)</p>
                     </c:when>
                     <c:when test="${message == 4}">
-                        <p class="message_erreur"> Votre inscription a été annulée : la ville n'est pas connue.</p>
+                        <p class="message_erreur"> Votre inscription a été annulée : La ville n'est pas connue.</p>
                     </c:when>
                     <c:otherwise>
                         <h3>Vous êtes un super-héros ?
