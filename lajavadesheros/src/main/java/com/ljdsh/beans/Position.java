@@ -15,7 +15,10 @@ public class Position {
     public String getLattitude() {
         return lattitude;
     }
-    //setter pour lattitude
+
+    /**
+     * @param lattitude  setter lattitude
+     */
     public void setLattitude(String lattitude) {
         this.lattitude = lattitude;
     }

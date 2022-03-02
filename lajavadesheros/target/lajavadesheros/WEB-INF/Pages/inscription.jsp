@@ -31,7 +31,6 @@
                 <h3>Vous êtes un super-héros ?
                     <br> Vous voulez vous rendre utile ?
                     <br>Inscivez-vous ! </h3>
-
             </c:otherwise>
         </c:choose>
         <br>

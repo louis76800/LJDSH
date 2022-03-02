@@ -127,7 +127,9 @@ public class Inscription extends HttpServlet {
                         } catch (ClassNotFoundException e) {
                         }
                         try {
-                            URL url = new URL("http://api.openweathermap.org/geo/1.0/direct?q='" + adresse + "'&appid=085526ba50eb67b600534682f09dc8dc");
+                           String adresse1 = adresse.replace("'","%27");
+                            adresse1 = adresse1.replace(" ","%20");
+                            URL url = new URL("http://api.openweathermap.org/geo/1.0/direct?q='" + adresse1 + "'&appid=085526ba50eb67b600534682f09dc8dc");
                             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
                             conn.setRequestMethod("GET");
                             conn.connect();

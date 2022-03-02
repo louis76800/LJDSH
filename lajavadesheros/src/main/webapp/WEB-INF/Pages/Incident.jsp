@@ -8,7 +8,7 @@
                 <h2 class="margin_top titre ">Signaler un incident</h2>
                 <c:choose>
                     <c:when test="${message == 1}">
-                        <p class="message_erreur"> La commune n'est pas correct.</p>
+                        <p class="message_erreur"> La commune n'est pas correct.(essayer sans caractère spécials)</p>
                     </c:when>
                     <c:when test="${message == 2}">
                         <p class="message_erreur">L'incident n'a pas été sélectionné.</p>
@@ -47,7 +47,7 @@
                 <div class="margin_padding " style="text-align: center">
                     <div>
                         <p>Pseudo : <h1><c:out value="${ supers.pseudo }"/></h1></p>
-                        <p>Ville de résidence : <h2><c:out value="${ supers.ville }"/></h2></p>
+                        <p>Ville de résidence : <h2 style="word-wrap: break-word;"><c:out value="${ supers.ville }"/></h2></p>
                         <p> Numéro de téléphone : <h3><c:out value="${ supers.telephone }"/></h3></p>
                     </div>
                 </div>

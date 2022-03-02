@@ -6,6 +6,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Coordonnes {
+    /**
+     * @return la position des supers pour l'afficher sur la carte
+     */
     public List<Position> recuperePositions() {
         List<Position> positions = new ArrayList<Position>();
         //chargement du driver

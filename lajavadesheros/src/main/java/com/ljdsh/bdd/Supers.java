@@ -5,9 +5,17 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 public class Supers {
+
     public Supers(Object lon, Object lat, String incident_en_question) {
         recupereSupers(lon,lat,incident_en_question);
     }
+
+    /**
+     * @param lon
+     * @param lat
+     * @param incident_en_question
+     * @return la fiche des supers qui sont dans le périmetre
+     */
     public List<Super> recupereSupers(Object lon, Object lat, String incident_en_question) {
         List<Super> supers = new ArrayList<Super>();
         //chargement du driver

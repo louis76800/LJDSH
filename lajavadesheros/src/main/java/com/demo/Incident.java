@@ -33,6 +33,7 @@ public class Incident extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("UTF-8");
         //récupere le post : input ville
         String ville = request.getParameter("ville");
         request.setAttribute("ville", ville);
@@ -53,10 +54,23 @@ public class Incident extends HttpServlet {
                         incident_en_question.equals("braquage")||
                         incident_en_question.equals("evasion_p")) {
                     try {
+                        System.out.println(ville);
+
+                        ville = ville.replace("'","%27");
+                        ville = ville.replace(" ","%20");
+                        ville = ville.replace("É","E");
+                        ville = ville.replace("Î","I");
+                        ville = ville.replace("ñ","n");
+                        ville = ville.replace("Á","A");
+                        ville = ville.replace("ú","u");
+                        ville = ville.replace("í","i");
+                        System.out.println(ville);
                         // connection a l'api
                         URL url = new URL("http://api.openweathermap.org/geo/1.0/direct?q=" + ville + "&appid=085526ba50eb67b600534682f09dc8dc");
                         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+                        System.out.println(url);
                         conn.setRequestMethod("GET");
+
                         conn.connect();
                         int responseCode = conn.getResponseCode();
                         JSONObject cityData;
