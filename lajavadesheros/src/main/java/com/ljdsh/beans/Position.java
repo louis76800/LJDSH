@@ -3,15 +3,24 @@ public class Position {
     //création des variables
     private String longitude;
     private String lattitude;
-    //getter pour longitude
+
+    /**
+     * @return getter pour longitude
+     */
     public String getLongitude() {
         return longitude;
     }
-    //setter pour longitude
+
+    /**
+     * @param longitude
+     */
     public void setLongitude(String longitude) {
         this.longitude = longitude;
     }
-    //getter pour lattitude
+
+    /**
+     * @return getter pour lattitude
+     */
     public String getLattitude() {
         return lattitude;
     }

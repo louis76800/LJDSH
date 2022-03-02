@@ -11,39 +11,66 @@ public class Super {
     public String getLongitude() {
         return longitude;
     }
-    // setter pour longitude
+
+    /**
+     * @param longitude
+     */
     public void setLongitude(String longitude) {
         this.longitude = longitude;
     }
-    // getter pour lattitude
+
+    /**
+     * @return getter pour lattitude
+     */
     public String getLattitude() {
         return lattitude;
     }
-    // setter pour lattitude
+
+    /**
+     * @param lattitude
+     */
     public void setLattitude(String lattitude) {
         this.lattitude = lattitude;
     }
-    // getter pour pseudo
+
+    /**
+     * @return getter pour pseudo
+     */
     public String getPseudo() {
         return pseudo;
     }
-    // setter pour pseudo
+
+    /**
+     * @param pseudo
+     */
     public void setPseudo(String pseudo) {
         this.pseudo = pseudo;
     }
-    // getter pour ville
+
+    /**
+     * @return getter pour ville
+     */
     public String getVille() {
         return ville;
     }
-    // setter pour ville
+
+    /**
+     * @param ville
+     */
     public void setVille(String ville) {
         this.ville = ville;
     }
-    // getter pour telephone
+
+    /**
+     * @return getter pour telephone
+     */
     public String getTelephone() {
         return telephone;
     }
-    // setter pour telephone
+
+    /**
+     * @param telephone
+     */
     public void setTelephone(String telephone) {
         this.telephone = telephone;
     }
