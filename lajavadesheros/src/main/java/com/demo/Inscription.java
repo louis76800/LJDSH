@@ -86,7 +86,6 @@ public class Inscription extends HttpServlet {
             if (pseudoverif == 0) {
                 if (pseudo != "" && adresse != "" && tel != "") {
                     int i = 0;
-                    System.out.println(Incendie);
                     if (Incendie != null && Incendie.equals("on")) {
                         i++;
                     }
@@ -183,7 +182,6 @@ public class Inscription extends HttpServlet {
                 this.getServletContext().getRequestDispatcher("/WEB-INF/Pages/inscription.jsp").forward(request, response);
             }
         } catch (SQLException e) {
-            System.out.println(e);
         }
     }
 }
