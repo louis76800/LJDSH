@@ -117,7 +117,7 @@ public class Inscription extends HttpServlet {
                         i++;
                     }
                     //Vérification du nombre d'incident choisi
-                    if ((i >= 1) && (i <= 4)) {
+                    if ((i >= 1) && (i <= 3)) {
                         String message = (pseudo + " " + Incendie + " " + Accident_routier + " " + Accident_fluviale + " " + Accident_aerien + " " + Eboulement + " " + Invasion_serpent + " " + Manifestation + " " + Braquage + " " +
                                 Evasion_prisonnier + " " + adresse + " " + tel);
                         // if si != evasion braquage ...
