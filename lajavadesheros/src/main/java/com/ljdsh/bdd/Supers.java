@@ -32,13 +32,22 @@ public class Supers {
             //here sonoo is database name, root is username and password
             statement = con.createStatement();
             // requete de select à 50 km de distance
+            System.out.println(
+                    "SELECT DISTINCT " +
+                            "pseudo,telephone,adresse, lattitude, longitude " +
+                            "FROM t_super " +
+                            "WHERE (ACOS(SIN(RADIANS(lattitude))SIN(RADIANS('"+lat+"'))+COS(RADIANS(lattitude))*COS(RADIANS('"+lat+"'))COS(RADIANS(longitude-'"+lon+"')))*6371) < 50"+
+
+                            "&& "+incident_en_question+"='on'"
+            );
             resultat = statement.executeQuery("" +
                     "SELECT DISTINCT " +
                     "pseudo,telephone,adresse, lattitude, longitude " +
                     "FROM t_super " +
-                    "WHERE lattitude >('"+lat+"'-0.7) && lattitude <("+lat+"+0.7) " +
-                    "&& longitude >("+lon+"-0.5) && longitude <("+lon+"+0.5) " +
-                    "&& "+incident_en_question+"='on'") ;
+                    "WHERE (ACOS(SIN(RADIANS(lattitude))*SIN(RADIANS('"+lat+"'))+COS(RADIANS(lattitude))*COS(RADIANS('"+lat+"'))*COS(RADIANS(longitude-'"+lon+"')))*6371) < 50"+
+
+                    " and "+incident_en_question+"='on'") ;
+
             while (resultat.next()) {
                 //récupère les coordonées qui provienne de la requête
                 String pseudo=resultat.getString("pseudo");
