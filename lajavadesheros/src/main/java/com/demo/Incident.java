@@ -110,7 +110,7 @@ public class Incident extends HttpServlet {
                         request.setAttribute("supers", tableSupers.recupereSupers(cityData.get("lon"), cityData.get("lat"), incident_en_question));
                         this.getServletContext().getRequestDispatcher("/WEB-INF/Pages/Incident.jsp").forward(request, response);
                     } catch (Exception e) {
-                        // la commune n'est pas correct
+                        // la commune n'est pas correcte
                         String messageretour = "1";
                         request.setAttribute("message", messageretour);
                         this.getServletContext().getRequestDispatcher("/WEB-INF/Pages/Incident.jsp").forward(request, response);
